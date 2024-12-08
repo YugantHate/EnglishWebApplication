@@ -1,0 +1,24 @@
+.nav-link {
+    display: block;
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #003366; /* Dark blue on hover */
+    color: white; /* White text on hover */
+  }
+  
+  .nav-link-active {
+    background-color: #007bff;
+    color: white;
+  }
+  

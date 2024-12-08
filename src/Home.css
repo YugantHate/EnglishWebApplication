@@ -1,0 +1,64 @@
+/* Sidebar Styling */
+.container {
+  display: flex;
+  height: 100vh;
+  margin-top: 30px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 200px;
+  height: calc(100vh - 30px); /* Adjusts sidebar height for top margin */
+  background-color: #616c76;
+  padding: 20px;
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+  background-color: rgb(227, 131, 51);
+  border: 2px solid black;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* Content section */
+.content-section {
+  margin-left: 220px; /* Space for the fixed sidebar */
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation link styling */
+.nav-links {
+  color: rgb(27, 28, 27);
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+}
+
+.nav-links:hover {
+  background-color:  rgb(255, 255, 255);
+  color: black; /* Slight hover effect */
+}
+
+/* Active link styling */
+.nav-links.active-link {
+  background-color: #f0f0f0;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+}
